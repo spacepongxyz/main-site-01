@@ -1,0 +1,16 @@
+{
+  "donate":"기부하기",  
+  "support": "프로젝트가 마음에 드시나요? 기부를 통해 우리가 지속적으로 운영할 수 있도록 도와주세요.",
+  "wallet": "0xe98391A9da013D999c1f24AcBc2EcdB20FBce2e4",
+  "support1": "여러분의 지원에 감사드립니다!",
+ "close": "닫기",
+ "select_network":"네트워크 선택",
+ "etherscan":"동력:",
+ "buyon":"에 구입",
+ "home":"홈",
+ "contractname":"계약",
+ "tokenname":"토큰: ",
+ "token":"토큰",
+ "motto": "*모든 기부금은 미래에 보상될 것입니다."
+}
+  

@@ -1,0 +1,16 @@
+{ 
+  "donate":"捐赠",  
+  "support": "喜欢这个项目吗？通过捐赠帮助我们继续运行。",
+  "wallet": "0xe98391A9da013D999c1f24AcBc2EcdB20FBce2e4",
+  "support1": "非常感谢您的支持！",
+ "close": "关闭",
+ "select_network":"选择您的网络",
+ "etherscan":"由",
+ "buyon":"在购买",
+ "home":"主页",
+ "contractname":"合约",
+ "tokenname":"代币: ",
+ "token":"代币",
+ "motto": "*所有捐赠将在未来得到补偿。"
+}
+  

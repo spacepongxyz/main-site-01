@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SPACEPONG.XYZ</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="hover-container">
+        <svg
+          id="webapp-logo"
+          viewBox="0 0 640 594"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="#000000ff">
+            <path
+              opacity="1.00"
+              d=" M 519.15 1.19 C 521.20 2.25 522.75 3.98 524.45 5.50 C 562.02 38.69 593.17 79.52 613.32 125.53 C 630.36 164.12 639.08 206.16 640.00 248.28 L 640.00 262.68 C 637.75 337.87 605.70 411.41 552.97 464.94 C 528.49 489.82 499.55 510.40 467.70 524.74 C 429.41 542.07 386.96 550.12 344.99 548.01 C 302.68 546.02 260.55 533.98 224.64 511.27 C 190.82 490.04 163.02 459.16 146.20 422.88 C 134.07 396.96 127.40 368.58 126.07 340.02 C 123.80 309.20 130.71 278.00 144.41 250.39 C 160.19 218.70 185.38 191.14 217.23 175.19 C 240.46 163.32 267.02 158.44 292.99 160.29 C 323.40 161.83 354.34 172.06 376.70 193.35 C 399.80 214.80 411.74 246.63 411.37 277.89 C 419.47 277.87 424.76 270.49 427.91 263.89 C 435.83 246.02 436.11 225.24 430.30 206.71 C 422.73 182.24 406.38 161.28 386.93 145.00 C 360.37 122.85 327.34 108.63 293.05 104.25 C 266.58 100.78 239.50 103.67 213.92 111.04 C 180.28 120.83 149.17 138.64 123.02 161.88 C 89.10 191.88 63.52 231.06 49.08 273.94 C 30.45 328.81 29.97 389.08 44.64 444.93 C 55.97 488.46 75.86 529.53 101.32 566.53 C 107.44 575.71 114.43 584.26 120.94 593.14 C 96.59 572.46 74.86 548.64 56.72 522.32 C 25.09 476.60 5.43 422.54 1.23 367.05 C 0.47 360.30 0.33 353.51 0.00 346.74 L 0.00 331.28 C 0.74 314.67 2.36 298.05 5.81 281.77 C 22.40 199.24 74.74 124.04 147.82 81.79 C 183.13 61.30 223.16 48.91 263.92 46.31 C 285.61 44.64 307.47 46.13 328.90 49.75 C 366.26 56.30 402.34 71.34 432.39 94.63 C 452.87 110.44 470.46 130.03 483.77 152.24 C 505.58 188.35 515.41 231.03 514.22 273.04 C 512.29 311.51 497.34 349.12 472.70 378.69 C 453.20 402.15 427.02 420.41 397.50 428.64 C 373.64 435.51 348.17 435.46 323.90 430.82 C 298.79 425.80 274.59 413.84 257.38 394.59 C 238.02 373.46 228.37 344.51 228.60 316.07 C 219.70 316.27 214.30 324.76 211.20 332.10 C 203.68 350.76 204.16 372.10 210.88 390.93 C 219.19 414.51 235.46 434.64 254.68 450.31 C 287.20 476.81 329.07 491.44 371.00 491.25 C 427.29 490.61 481.61 465.59 522.26 427.28 C 548.10 403.07 568.76 373.41 582.86 340.94 C 598.31 305.46 605.85 266.68 605.65 228.02 C 605.77 183.36 595.41 139.03 577.83 98.10 C 562.93 63.25 542.80 30.75 519.15 1.19 Z"
+            />
+          </g>
+        </svg>
+
+        <a href="https://www.spacepong.xyz" class="title" data-key="title"
+          >SPACEPONG.XYZ</a
+        >
+      </div>
+
+      <nav>
+        <div id="home-link" data-key="home"></div>
+        <div id="token-link" data-key="token">Token</div>
+        <a href="https://docs.spacepong.xyz/" target="_blank" data-key="docs"
+          >Docs</a
+        >
+        <div id="donate-button">
+          <a href="#" id="donate-link" data-key="donate"></a>
+          <i class="fas fa-heart" id="heart-icon"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div id="background"></div>
+    <div class="meteorite"></div>
+    <div id="sphere"></div>
+    <div id="shadow"></div>
+    <canvas id="canvas"></canvas>
+    <div id="dialog" class="dialog">
+      <p data-key="support"></p>
+      <p data-key="support1"></p>
+      <div class="wallet-section">
+        <p data-key="wallet"></p>
+        <button id="copy-button">&#x2398;</button>
+      </div>
+      <div>spacepongxyz.eth</div>
+      <div style="margin-top: 20px">
+        <i data-key="motto" style="font-size: 12px"></i>
+      </div>
+      <button id="close-dialog" data-key="close">Close</button>
+    </div>
+
+    <div class="container">
+      <div class="logo">SPACEPONG</div>
+
+      <div class="step" data-key="select_network"></div>
+
+      <div style="display: flex">
+        <!-- Left Column -->
+        <div style="flex: 1">
+          <div class="step">
+            <button
+              disabled
+              id="greyout"
+              class="choose-btn"
+              onclick="document.body.classList.add('fade-out'); setTimeout(function() { window.location.href= 'https://arb.spacepong.xyz' }, 1000)"
+            >
+              <img
+                src="images/logo-arbitrum.svg"
+                alt="Arbitrum Logo"
+                style="vertical-align: middle; height: 20px; margin-right: 10px"
+              />
+              <span style="vertical-align: middle">ARBITRUM</span>
+            </button>
+          </div>
+          <div class="step">
+            <button class="choose-btn" disabled>
+              <span style="vertical-align: middle">???</span>
+            </button>
+          </div>
+
+          <div class="step">
+            <button class="choose-btn" disabled>
+              <span style="vertical-align: middle">???</span>
+            </button>
+          </div>
+
+          <div class="step">
+            <button class="choose-btn" disabled>
+              <span style="vertical-align: middle">???</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-buy">
+      <div class="logo">SPACEPONG</div>
+
+      <div class="step-buy" data-key="select_network"></div>
+
+      <div style="display: flex; gap: 70px">
+        <!-- Left Column -->
+        <div style="flex: 1">
+          <div class="step-buy">
+            <div class="choose-div">
+              <img
+                src="images/logo-arbitrum.svg"
+                alt="Arbitrum Logo"
+                style="vertical-align: middle; height: 20px; margin-right: 10px"
+              />
+              <span style="vertical-align: middle">ARBITRUM</span>
+            </div>
+            <div class="step-text-buy">
+              <span data-key="tokenname"></span>
+              <span>ePONG</span>
+            </div>
+
+            <a
+              class="step-text-buy"
+              href="https://arbiscan.io/token/0xe46fff09c4f84383c88b0bd4e1b217972393b975"
+              target="_blank"
+              rel="noopener"
+            >
+              <span data-key="contractname"></span>
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <button
+              class="choose-btn-buy"
+              disabled
+              onclick="window.open('https://app.uniswap.org/#/swap?outputCurrency=0xe46fff09c4f84383c88b0bd4e1b217972393b975', '_blank')"
+            >
+              <span style="vertical-align: middle" data-key="buyon"></span>
+              <img
+                src="images/logo-uniswap.png"
+                alt="Uniswap Logo"
+                style="vertical-align: middle; height: 20px; margin-left: 10px"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        id="sunIcon"
+        class="sun"
+        viewBox="0 0 24 24"
+        onClick="toggleTheme()"
+      >
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.95h-2V3.5h2V.55zm7.45 3.91l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.7l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-1 16.95h2V19.5h-2v2.95zm-7.45-3.91l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8z"
+        />
+      </svg>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        id="moonIcon"
+        class="moon"
+        viewBox="0 0 48 48"
+        onClick="toggleTheme()"
+      >
+        <path d="M0 0h48v48h-48z" fill="none" />
+        <path
+          d="M18 4c-2.09 0-4.11.32-6 .92 8.11 2.55 14 10.13 14 19.08 0 8.95-5.89 16.53-14 19.08 1.89.59 3.91.92 6 .92 11.05 0 20-8.95 20-20s-8.95-20-20-20z"
+        />
+      </svg>
+
+      <div class="social-links">
+        <a
+          href="https://twitter.com/spacepongxyz"
+          class="social-link twitter"
+          target="_blank"
+        >
+          <svg
+            role="img"
+            class="twitter-logo"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Twitter</title>
+            <path
+              d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://github.com/spacepongxyz"
+          class="social-link github"
+          target="_blank"
+        >
+          <svg
+            role="img"
+            class="github-logo"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>GitHub</title>
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://t.me/spacepong"
+          class="social-link telegram"
+          target="_blank"
+        >
+          <svg
+            role="img"
+            class="telegram-logo"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Telegram</title>
+            <path
+              d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="https://discord.gg/2y8QXPq4p3"
+          class="social-link discord"
+          target="_blank"
+        >
+          <svg
+            role="img"
+            class="discord-logo"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Discord</title>
+            <path
+              d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"
+            />
+          </svg>
+        </a>
+      </div>
+      <p class="powered-by">
+        Powered by
+        <a href="https://etherscan.io/" target="_blank" class="link-no-style"
+          >Etherscan.io APIs</a
+        >
+      </p>
+    </footer>
+
+    <script
+      defer
+      src="main.js"
+      Content-Type="text/javascript"
+      charset="UTF-8"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{ 
+ "donate":"Donner",
+ "support": "Aimez-vous le projet ? Aidez-nous à le maintenir en activité en faisant un don.",
+ "wallet": "0xe98391A9da013D999c1f24AcBc2EcdB20FBce2e4",
+ "support1": "Votre soutien est grandement apprécié !",
+ "close": "FERMER", 
+ "select_network":"CHOISISSEZ VOTRE RÉSEAU",
+ "etherscan":"Propulsé par",
+ "buyon":"Acheter sur",
+ "home":"Accueil",
+ "contractname":"Contrat",
+ "tokenname":"Jeton: ",
+ "token":"Jeton",
+ "motto": "*Toute donation sera compensée à l'avenir."
+}
